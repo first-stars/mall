@@ -1,0 +1,24 @@
+spring:
+  mail:
+    host: smtp.qq.com
+    port: 587
+  # 配置个人QQ账户和密码（密码是加密后的授权码）
+    username: 973169778@qq.com
+    password: jgdgsdqzpbmbbbgf
+    default-encoding: UTF-8
+  # 邮件服务超时时间配置
+    properties:
+      mail:
+        smtp:
+          connectiontimeout: 5000
+          timeout: 3000
+          writetimeout: 5000
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 114.55.9.31:8848
+  application:
+    name: gulimall-third-party
+
+server:
+  port: 35000

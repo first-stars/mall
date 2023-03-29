@@ -1,0 +1,23 @@
+package com.w.gulimall.coupon.service;
+
+import com.baomidou.mybatisplus.extension.service.IService;
+import com.w.common.to.SkuReductionTo;
+import com.w.common.utils.PageUtils;
+import com.w.gulimall.coupon.entity.SkuFullReductionEntity;
+
+import java.util.Map;
+
+/**
+ * 商品满减信息
+ *
+ * @author xin
+ * @email 973169778@gmail.com
+ * @date 2022-12-28 11:20:56
+ */
+public interface SkuFullReductionService extends IService<SkuFullReductionEntity> {
+
+    PageUtils queryPage(Map<String, Object> params);
+
+    void saveSkuFullReduction(SkuReductionTo skuReductionTo);
+}
+
